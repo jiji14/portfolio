@@ -1,0 +1,16 @@
+/* works */
+.WorksContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .workWrap{
+    display: flex;
+    align-items: center;
+  }
+  
+  .workImg{
+    width:100%;
+    cursor: pointer;
+  }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import profile from '../image/profile.jpg'
+import profile from '../image/profile.jpg';
+import '../css/About.css';
 
 function About() {
 

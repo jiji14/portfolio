@@ -1,0 +1,10 @@
+/*컨텍트 */
+.contactInfo{
+    font-size: 25px;
+  }
+  .contactInfo>p{
+    padding-bottom: 20px;
+  }
+  a, a:visited, a:hover, a:active {
+    color: #24292e;
+  }

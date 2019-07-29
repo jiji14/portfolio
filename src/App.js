@@ -5,7 +5,7 @@ import Resume from './components/Resume.js';
 import Works from './components/Works.js';
 import Contact from './components/Contact.js';
 
-import './App.css';
+import './css/App.css';
 
 function App() {
 

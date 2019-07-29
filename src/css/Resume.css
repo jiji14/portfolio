@@ -1,0 +1,57 @@
+/*Resume*/
+.ResumeContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  
+  }
+  #resumeTitle{
+    align-self: center;
+  }
+  .education, .work, .skills{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .skills{
+    margin-bottom: 0 !important;
+  }
+  .title{
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .details{
+    font-size: 25px;
+  }
+  .detailBox{
+    margin-bottom: 20px;
+  }
+  .term{
+    font-size:18px;
+    font-style: italic;
+    color: rgb(71, 71, 71);
+    padding-top: 5px;
+  }
+  .eduwork{
+    display: flex;
+    justify-content: space-between;
+  }
+  .detailBox>div{
+    background:rgb(139, 209, 197);
+    font-size: 20px;
+    padding-left: 20px;
+    line-height: 2em;  
+    height: 2em;
+    margin-bottom: 20px;
+    color:white;
+  }
+  .html, .javascript{
+    width: 80%;
+  }
+  .react, .spring{
+    width: 70%;
+  }
+  .java, .sql{
+    width: 65%;
+  }

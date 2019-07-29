@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import project1 from '../image/project1.PNG';
+import '../css/Works.css';
 
 function Works() {
 
