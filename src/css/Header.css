@@ -4,7 +4,6 @@
     left: 0;
     width:100%;
     background: #24292e;
-    color: white;
     font-size:1em;
     display: flex;
     justify-content: center;
@@ -14,12 +13,12 @@
     width: 60%;
     margin: 20px;
   }
+  .headerList>ul>li>a{
+    color: white !important;
+  }
   .headerList>ul{
     display:flex;
     justify-content: space-between;
-  }
-  .headerList li{
-    cursor: pointer;
   }
   .goDown{
     margin-top: 6em;

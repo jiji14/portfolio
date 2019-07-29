@@ -5,7 +5,7 @@ import '../css/About.css';
 function About() {
 
   return(
-    <div className="homeContainer">
+    <div className="homeContainer" id="about">
         <div className="topTitle">
             ABOUT
         </div>

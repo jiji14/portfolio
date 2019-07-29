@@ -7,7 +7,9 @@ function Footer() {
   return(
     <footer className="footerContainer">   
         <div className="goUp">
-            <img src={up} className="upImg" />
+            <a href="#home" >
+                <img src={up} className="upImg" />
+            </a>
         </div>
         <div className="bottom">
             Jijeong Lee <em>08/01/2019</em>

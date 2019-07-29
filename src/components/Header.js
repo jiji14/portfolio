@@ -9,17 +9,19 @@ function Header() {
       <div className="headerContainer">   
         <div className="headerList">
           <ul>
-              <li>HOME</li>
-              <li>ABOUT</li>
-              <li>RESUME</li>
-              <li>WORKS</li>
-              <li>CONTACT</li>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#resume">RESUME</a></li>
+              <li><a href="#works">WORKS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
         
       </div>
-      <div className="goDown">
-        <img src={down} className="downImg" />
+      <div className="goDown" id="home">
+        <a href="#contact">
+          <img src={down} className="downImg" />
+        </a>
       </div>
     </header>
   )
