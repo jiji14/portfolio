@@ -9,8 +9,13 @@
     display: flex;
     align-items: center;
   }
+  .items{
+    flex-basis: 0;
+    flex: 1 1 150px;
+  }
   
   .workImg{
-    width:100%;
     cursor: pointer;
+    max-width: 100%;
+	  width: 500px;
   }

@@ -27,7 +27,7 @@ function Resume() {
                         <p className="term">2019.3 ~ 2019.8</p>
                     </div>
                     <div className="detailBox">
-                        <p>서울여자대학교 의류학과 (3.79/4.5)</p>
+                        <p>서울여자대학교 의류학과 (3.79 / 4.5)</p>
                         <p className="term">2010.3 ~ 2015.8</p>
                     </div>
                 </div>
@@ -39,11 +39,11 @@ function Resume() {
                 </div>
                 <div className="details">
                     <div className="detailBox">
-                        <p >서울여자대학교 재무팀  -  출납업무 및 재무관리</p>
+                        <p >서울여자대학교 재무팀 (출납업무 및 재무관리)</p>
                         <p className="term">2016.11 ~ 2018.11</p>
                     </div>
                     <div className="detailBox">
-                        <p>신한은행 인천공항점  -  환전 및 입출금업무</p>
+                        <p>신한은행 인천공항점 (환전 및 입출금업무)</p>
                         <p className="term">2015.9 ~ 2016.10</p>
                     </div>
                 </div>
