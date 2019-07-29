@@ -2,7 +2,36 @@
     height: 100vh;
     width: 100%;
     background-color: #24292e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* 글씨 애니메이션*/
+.mainText {
+    text-transform: uppercase;
+    font-size: 4em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #24292e, #8bd1c5, #fff);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3.5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(139, 209, 197, 0);
+    padding-bottom:2em;
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+
 .goDown{
     background-color: white;
     width: 100%;

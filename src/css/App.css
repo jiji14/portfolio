@@ -32,8 +32,8 @@ a{
 
 
 
-
-/* 미디어 쿼리 */
+/* 
+미디어 쿼리
 
 @media (max-width: 979px) {
   p{
@@ -65,7 +65,7 @@ a{
     font-size: 15px;
   }
   .education, .work, .skills{
-    /* min-width: 500px; */
+
     margin-bottom: 30px;
   }
   .title{
@@ -82,4 +82,4 @@ a{
     font-size: 10px;
     margin-bottom: 10px;
   }
-}
+} */
