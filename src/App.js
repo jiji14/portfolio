@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header.js';
+import Home from './components/Home.js';
 import About from './components/About.js';
 import Resume from './components/Resume.js';
 import Works from './components/Works.js';
@@ -13,6 +14,7 @@ function App() {
   return(
     <div className="container">
       <Header />
+      <Home />
       <section className="content">
         <About />
         <Resume />

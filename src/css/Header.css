@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     position: fixed;
+    z-index: 99999;
   }
   .headerList{
     width: 60%;
@@ -16,15 +17,12 @@
   .headerList>ul>li>a{
     color: white !important;
   }
+  .headerList>ul>li>a:hover{
+    font-size:1.2em;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+  }
   .headerList>ul{
     display:flex;
     justify-content: space-between;
-  }
-  .goDown{
-    margin-top: 6em;
-    text-align: center;
-  }  
-  .downImg{
-    width:70px;
-    cursor: pointer;
   }

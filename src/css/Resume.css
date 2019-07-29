@@ -45,6 +45,7 @@
     height: 2em;
     margin-bottom: 20px;
     color:white;
+    box-shadow: 5px 5px 10px gray;
   }
   .html, .javascript{
     width: 80%;

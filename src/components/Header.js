@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Header.css';
-import down from '../image/down.png';
+
 
 function Header() {
 
   return(
     <header>
-      <div className="headerContainer">   
+      <div className="headerContainer" >   
         <div className="headerList">
           <ul>
               <li><a href="#home">HOME</a></li>
@@ -16,13 +16,7 @@ function Header() {
               <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
-        
-      </div>
-      <div className="goDown" id="home">
-        <a href="#contact">
-          <img src={down} className="downImg" />
-        </a>
-      </div>
+      </div>  
     </header>
   )
 }

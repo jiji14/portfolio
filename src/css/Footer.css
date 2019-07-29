@@ -9,6 +9,10 @@
     width:70px;
     cursor: pointer;
 }
+.upImg:hover{
+    width:80px;
+    transition: 0.3s;
+}
 .bottom{
     font-size: 20px;
     text-align: center;
