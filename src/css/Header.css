@@ -21,4 +21,11 @@
   .headerList li{
     cursor: pointer;
   }
-  
+  .goDown{
+    margin-top: 6em;
+    text-align: center;
+  }  
+  .downImg{
+    width:30%;
+    cursor: pointer;
+  }
