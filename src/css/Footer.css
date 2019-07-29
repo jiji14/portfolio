@@ -1,0 +1,22 @@
+.footerContainer{
+    width:100%;
+}
+.goUp{
+    margin-bottom: 6em;
+    text-align: center;
+}  
+.upImg{
+    width:70px;
+    cursor: pointer;
+}
+.bottom{
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    color: #24292e;
+    font-style: italic;
+}
+em{
+    color: rgb(139, 209, 197);
+    font-weight: bold;
+}

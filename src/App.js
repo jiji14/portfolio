@@ -4,6 +4,7 @@ import About from './components/About.js';
 import Resume from './components/Resume.js';
 import Works from './components/Works.js';
 import Contact from './components/Contact.js';
+import Footer from './components/Footer.js';
 
 import './css/App.css';
 
@@ -12,12 +13,13 @@ function App() {
   return(
     <div className="container">
       <Header />
-      <div className="content">
+      <section className="content">
         <About />
         <Resume />
         <Works />
         <Contact />
-      </div>
+      </section>
+      <Footer />
     </div>
   )
 }

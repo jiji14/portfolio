@@ -5,7 +5,7 @@ import down from '../image/down.png';
 function Header() {
 
   return(
-    <div>
+    <header>
       <div className="headerContainer">   
         <div className="headerList">
           <ul>
@@ -21,7 +21,7 @@ function Header() {
       <div className="goDown">
         <img src={down} className="downImg" />
       </div>
-    </div>
+    </header>
   )
 }
 
