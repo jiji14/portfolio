@@ -7,7 +7,7 @@ function Home() {
   return(
     <div className="home" id="home">
         <div className="mainText">
-            Hello! Welcome to my world :)
+            Hi! I am Jijeong :)
         </div>
         <div className="goDown" >
             <a href="#footer">

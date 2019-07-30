@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/Footer.css';
-import up from '../image/up.png';
 
 function Footer() {
 
@@ -8,7 +7,7 @@ function Footer() {
     <footer className="footerContainer">   
         <div className="goUp">
             <a href="#home" >
-                <img src={up} className="upImg" alt=""/>
+              <i class="fas fa-chevron-circle-up"></i>
             </a>
         </div>
         <div className="bottom" id="footer">

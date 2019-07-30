@@ -14,6 +14,7 @@ function App() {
 
   useEffect(() => {
     $(document).ready(function($) {
+    
       $(".scroll").click(function(event){            
               event.preventDefault();
               $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
@@ -28,9 +29,9 @@ function App() {
         <Home />
       </section>
       <section className="content">
+        <Works />
         <About />
         <Resume />
-        <Works />
       </section>
       <Footer />
     </div>
