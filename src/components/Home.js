@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../css/Home.css';
 import down from '../image/down.png';
 
@@ -10,8 +10,8 @@ function Home() {
             Hello! Welcome to my world :)
         </div>
         <div className="goDown" >
-            <a href="#contact">
-            <img src={down} className="downImg" />
+            <a href="#footer">
+            <img src={down} className="downImg" alt="" />
             </a>
         </div>
     </div>

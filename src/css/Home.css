@@ -19,7 +19,7 @@
     animation: animate 3.5s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(139, 209, 197, 0);
-    padding-bottom:2em;
+    padding: 0 1em 2em 1em;
 }
 
 @keyframes animate {

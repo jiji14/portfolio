@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import project1 from '../image/pms1.PNG';
 import airApp1 from '../image/airApp1.JPG';
 import getAQI1 from '../image/getAQI1.jpg';
@@ -13,13 +13,13 @@ function Works() {
         </div>
         <div className="workWrap">
             <div className="items">
-                <img src={getAQI1} className="workImg"/>
+                <img src={getAQI1} className="workImg" alt=""/>
             </div>
             <div className="items">
-                <img src={airApp1} className="workImg"/>
+                <img src={airApp1} className="workImg" alt=""/>
             </div>
             <div className="items">
-                <img src={project1} className="workImg"/>
+                <img src={project1} className="workImg" alt=""/>
             </div>
         </div>   
     </div>

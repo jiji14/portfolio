@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../css/Footer.css';
 import up from '../image/up.png';
 
@@ -8,10 +8,10 @@ function Footer() {
     <footer className="footerContainer">   
         <div className="goUp">
             <a href="#home" >
-                <img src={up} className="upImg" />
+                <img src={up} className="upImg" alt=""/>
             </a>
         </div>
-        <div className="bottom">
+        <div className="bottom" id="footer">
             Jijeong Lee <em>08/01/2019</em>
         </div>
     </footer>

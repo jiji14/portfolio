@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../css/Header.css';
 
 
@@ -13,7 +13,6 @@ function Header() {
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#resume">RESUME</a></li>
               <li><a href="#works">WORKS</a></li>
-              <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </div>  
