@@ -11,7 +11,7 @@ function Home() {
         </div>
         <div className="goDown" >
             <a href="#footer">
-            <img src={down} className="downImg" alt="" />
+              <img src={down} className="downImg" alt="" />
             </a>
         </div>
     </div>

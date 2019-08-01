@@ -1,21 +1,57 @@
 /* works */
 .WorksContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-  }
-  .workWrap{
-    display: flex;
-    align-items: center;
-  }
-  .items{
-    flex-basis: 0;
-    flex: 1 1 150px;
-  }
-  
-  .workImg{
-    cursor: pointer;
-    max-width: 100%;
-	  width: 500px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.workWrap{
+  display: flex;
+  align-items: center;
+}
+.items{
+  flex-basis: 0;
+  flex: 1 1 150px;
+}
+.workImg{
+  cursor: pointer;
+  max-width: 100%;
+  width: 500px;
+}
+.modalBox{
+  color: #24292e;
+  display: flex;
+  flex-direction: column;
+}
+.topLine{
+  display: flex;
+  justify-content: space-between;
+}
+.closeBtn{
+  width:30x;
+  height:30px;
+  margin: 2em;
+  cursor: pointer;;
+}
+.modalTitle{
+  padding:0.5em 1em;
+  font-size: 40px;
+}
+.popImg{
+  width: 80%;
+  align-self: center;
+}
+.modalInfo{
+  font-size: 20px;
+  padding:1em 2em;
+}
+.btnBox{
+  display: flex;
+
+}
+.view{
+  background: rgb(139, 209, 197);
+  margin: 1em 1em 0.5em 0;
+  cursor: pointer;
+  padding: 0.4em 1em;
+  color: white;
+}
