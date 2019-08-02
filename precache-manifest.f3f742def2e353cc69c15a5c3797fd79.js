@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3e123295398778aee4ab82f6aae8caa",
+    "revision": "9e757e144d9eaf1ad8fc099b2c05bdf1",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "5d4de62b824ef309947f",
-    "url": "/portfolio/static/css/main.e69ebf61.chunk.css"
+    "revision": "b0bc813b29c1211dcc14",
+    "url": "/portfolio/static/css/main.b36a2ed6.chunk.css"
   },
   {
-    "revision": "00ab714657be12e9b05c",
-    "url": "/portfolio/static/js/2.47e21e45.chunk.js"
+    "revision": "df4e564cabec8f5591af",
+    "url": "/portfolio/static/js/2.cd171f23.chunk.js"
   },
   {
-    "revision": "5d4de62b824ef309947f",
-    "url": "/portfolio/static/js/main.a971ee06.chunk.js"
+    "revision": "b0bc813b29c1211dcc14",
+    "url": "/portfolio/static/js/main.45777916.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -24,8 +24,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/airApp1.f71e1f58.JPG"
   },
   {
+    "revision": "b0ff232287ea228d10bebc34302f1a55",
+    "url": "/portfolio/static/media/airApp2.b0ff2322.png"
+  },
+  {
     "revision": "044d1e1aff9397398b0ce66b787d7279",
     "url": "/portfolio/static/media/getAQI1.044d1e1a.jpg"
+  },
+  {
+    "revision": "19d1e2367568ceb2ea2a92d88af97ec8",
+    "url": "/portfolio/static/media/getAQI2.19d1e236.JPG"
   },
   {
     "revision": "16626cf9943d5725c020aa8773572125",
