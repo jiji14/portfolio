@@ -3,16 +3,42 @@ import Modal from 'react-awesome-modal';
 import project1 from '../image/pms1.PNG';
 import airApp1 from '../image/airApp1.JPG';
 import getAQI1 from '../image/getAQI1.jpg';
-import getAQI2 from '../image/getAQI2.JPG';
-import closeBtn from '../image/clsBtn.png'
+import closeBtn from '../image/clsBtn.png';
 import '../css/Works.css';
+
 
 
 function Works() {
 
+    const works = [
+        {
+            title : "Search Air Quality",
+            imgSrc : require('../image/getAQI2.JPG'),
+            detail : "React.js로 구현한 도시이름을 검색하면 미세먼지 수치를 알려주는 웹사이트 입니다.",
+            viewSite :"https://jiji14.github.io/getAQI/",
+            viewCode :"https://github.com/jiji14/getAQI"
+        },
+        {
+            title : "Air Quality App",
+            imgSrc : require('../image/airApp2.png'),
+            detail : "React Native로 구현한 위치기반 미세먼지 수치를 알려주는 앱입니다.",
+            viewSite :"",
+            viewCode :"https://github.com/jiji14/getAQIApp"
+        },
+        {
+            title : "Project Management System",
+            imgSrc : require('../image/pms1.PNG'),
+            detail : "Spring MVC 패턴을 기반으로 제작한 프로젝트 관리 시스템입니다.",
+            viewSite :"",
+            viewCode :""
+        }
+    ]
     const [visible, setVisible] = useState(false);
+    const [workNum, setWorkNum] = useState(0);
 
-    function openModal(){
+
+    function openModal(e){
+        setWorkNum(e.target.id);
         setVisible(true);
     }
 
@@ -20,7 +46,7 @@ function Works() {
         setVisible(false);
     }
 
-  return(
+  return (
     <div className="WorksContainer" id="works">
         <div className="topTitle">
             WORKS
@@ -35,21 +61,21 @@ function Works() {
             <div className="items">
                 <img onClick={openModal} src={project1} className="workImg" id="2" alt=""/>
             </div>
-            <Modal visible={visible} width="50%" effect="fadeInUp" onClickAway={() => this.closeModal()}>
-                <div className="modalBox">
-                    <div className="topLine">
-                        <h1 className="modalTitle">Search Air Quality</h1>
-                        <img src={closeBtn} className="closeBtn" onClick={closeModal} />
-                    </div>
-                    <img src={getAQI2} className="popImg" />
-                    <div className="modalInfo">
-                        <p>도시이름을 검색하면 미세먼지 수치를 알려주는 웹사이트 입니다.</p>
-                        <div className="btnBox">
-                            <div className="view">View Site</div>
-                            <div className="view">View Code</div>
+            <Modal visible={visible} works={works} workNum={workNum} width="50%" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+                    <div className="modalBox">
+                        <div className="topLine">
+                            <h1 className="modalTitle">{works[workNum].title}</h1>
+                            <img src={closeBtn} className="closeBtn" onClick={closeModal} />
+                        </div>
+                        <img src={works[workNum].imgSrc} className="popImg" />
+                        <div className="modalInfo">
+                            <div>{works[workNum].detail}</div>
+                            <div className="btnBox">
+                                <div className="view"><a href={works[workNum].viewSite } >View Site</a></div>
+                                <div className="view"><a href={works[workNum].viewCode } >View Code</a></div>
+                            </div>
                         </div>
                     </div>
-                </div>
             </Modal>
         </div>  
     </div>

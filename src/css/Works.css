@@ -46,6 +46,7 @@
 }
 .btnBox{
   display: flex;
+  margin-top:0.5em;
 
 }
 .view{
@@ -53,5 +54,8 @@
   margin: 1em 1em 0.5em 0;
   cursor: pointer;
   padding: 0.4em 1em;
+  
+}
+.view>a{
   color: white;
 }
