@@ -58,6 +58,12 @@ a{
   * {
     font-size: 1em !important;
   }
+  .home{
+    height: 80vh;
+  }
+  .goDown {
+    padding-bottom: 2em;
+}
   .profileBox {
     display: flex;
     flex-direction: column;
