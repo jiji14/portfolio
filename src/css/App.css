@@ -37,62 +37,50 @@ a{
 }
 
 /* 태블릿 */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  
-}
-
-/* 작은 태블릿 */
-@media (min-width: 481px) and (max-width: 767px) {
-
-}
-
-/* 모바일 */
-@media (min-width: 320px) and (max-width: 480px) {
-  p{
-    font-size: 12px;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profileBox {
+    display: flex;
+    flex-direction: column;
   }
-  .headerList{
-    font-size:10px;   
-    margin: 12px;
+  .eduwork{
+    display: flex;
+    flex-direction: column;
+  }
+  .characters>div {
+    width: 5em;
+    height: 5em;
+    line-height: 5em;
+  }
+}
+
+/* 작은 태블릿 & 모바일 */
+@media (min-width: 320px) and (max-width: 767px) {
+  * {
+    font-size: 1em !important;
+  }
+  .profileBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .eduwork{
+    display: flex;
+    flex-direction: column;
+  }
+  .workWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .characters {
+    display: none;
+  }
+  .headerContainer {
+    font-size: 0.6em !important;
   }
   .topTitle{
-    font-size:30px;
-    margin-bottom: 50px;
+    font-size: 1.7em !important;
   }
-  .aboutMe>p{
-    font-size: 15px;
-    padding-bottom: 5px;
-  }
-  .characters{
-    margin-bottom: 40px;
-  }
-  .characters>div{
-    font-size: 12px;
-    line-height: 80px;
-    width: 80px;
-    height: 80px;
-  }
-  .content>div{
-    padding: 80px 0;
-    font-size: 15px;
-  }
-  .education, .work, .skills{
-
-    margin-bottom: 30px;
-  }
-  .title{
-    font-size: 20px;
-    padding-bottom: 20px;
-  }
-  .term{
-    font-size: 10px;
-  }
-  .contactInfo>p{
-    font-size: 18px;
-  }
-  .detailBox>div{
-    font-size: 10px;
-    margin-bottom: 10px;
+  .items:nth-child(2){
+    padding-bottom: 3em;
   }
 }
+ 

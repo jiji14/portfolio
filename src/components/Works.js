@@ -65,9 +65,9 @@ function Works() {
                     <div className="modalBox">
                         <div className="topLine">
                             <h1 className="modalTitle">{works[workNum].title}</h1>
-                            <img src={closeBtn} className="closeBtn" onClick={closeModal} />
+                            <img src={closeBtn} className="closeBtn" onClick={closeModal} alt="" />
                         </div>
-                        <img src={works[workNum].imgSrc} className="popImg" />
+                        <img src={works[workNum].imgSrc} className="popImg" alt="" />
                         <div className="modalInfo">
                             <div>{works[workNum].detail}</div>
                             <div className="btnBox">
