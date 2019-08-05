@@ -27,10 +27,10 @@ function Works() {
         },
         {
             title : "Project Management System",
-            imgSrc : require('../image/pms1.PNG'),
+            imgSrc : require('../image/project02.png'),
             detail : "Spring MVC 패턴을 기반으로 제작한 프로젝트 관리 시스템입니다.",
             viewSite :"https://docs.google.com/presentation/d/12SFFQUR6XlnXqxQuX8Lz432ShZSS_3WmFsONl52OoeA/edit?usp=sharing",
-            viewCode :""
+            viewCode :"https://github.com/jiji14/Project-Management-System"
         }
     ]
     const [visible, setVisible] = useState(false);
