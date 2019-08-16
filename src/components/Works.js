@@ -22,7 +22,7 @@ function Works() {
             title : "Air Quality App",
             imgSrc : require('../image/airApp2.png'),
             detail : "React Native로 구현한 위치기반 미세먼지 수치를 알려주는 앱입니다.",
-            viewSite :"",
+            viewSite :"https://play.google.com/store/apps/details?id=com.jiji.getAirApp",
             viewCode :"https://github.com/jiji14/getAQIApp"
         },
         {
