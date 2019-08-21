@@ -3,8 +3,6 @@
     width: 80%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-  
   }
   #resumeTitle{
     align-self: center;
@@ -14,6 +12,12 @@
     flex-direction: column;
     margin-bottom: 70px;
   }
+  .details{
+    font-size: 25px;
+  }
+  .detailBox{
+    margin-bottom: 20px;
+  }
   .skills{
     margin-bottom: 0 !important;
   }
@@ -21,12 +25,6 @@
     font-size: 30px;
     padding-bottom: 20px;
     font-weight: bold;
-  }
-  .details{
-    font-size: 25px;
-  }
-  .detailBox{
-    margin-bottom: 20px;
   }
   .term{
     font-size:18px;
@@ -38,24 +36,27 @@
     display: flex;
     justify-content: space-between;
   }
-  .detailBox>div{
+  #skillInfo{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .skillBox{
+    display: flex;
+    justify-content: space-around;
+  }
+  .skillBox>div{
     background:rgb(139, 209, 197);
+    text-align: center;
+    font-style: bold;
     font-size: 23px;
-    padding-left: 20px;
-    line-height: 2em;  
-    height: 2em;
+    line-height: 100px;  
+    height: 100px;
+    width: 20%;
     margin-bottom: 20px;
+    border-radius: 10px;
     color:white;
     box-shadow: 5px 5px 10px gray;
-  }
-  .html, .javascript{
-    width: 80%;
-  }
-  .react, .spring{
-    width: 70%;
-  }
-  .java, .sql{
-    width: 65%;
   }
 
   

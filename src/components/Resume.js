@@ -25,7 +25,6 @@ function Resume() {
                     </div>
                 </div>
             </div> 
-
             <div className="work">
                 <div className="title">
                     WORK
@@ -42,21 +41,26 @@ function Resume() {
                 </div>
             </div>  
         </div>
+
         <div className="skills">
             <div className="title">
                 SKILLS
             </div>
-            <div className="details">
-                <div className="detailBox">
-                    <div className="html">HTML / CSS</div>
-                    <div className="javascript">JavaScript / JQuery</div>
-                    <div className="react">React.js / React Native</div>
-                    <div className="java">Java / Jsp</div>
-                    <div className="spring">Spring Framework</div>
-                    <div className="sql">Oracle SQL</div>
+            <div className="detailBox" id="skillInfo">
+                <div className="skillBox">
+                    <div>HTML / CSS</div>
+                    <div>JavaScript / JQuery</div>
+                    <div>Ajax</div>
+                    <div>React.js / React Native</div>
+                </div>
+                <div className="skillBox">
+                    <div>Java / Jsp</div>
+                    <div>Spring Framework</div>
+                    <div>Oracle SQL</div>
+                    <div>Git</div>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
   )
 }
