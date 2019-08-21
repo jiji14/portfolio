@@ -1,45 +1,22 @@
 import React from 'react';
+import Detail from './Detail.js';
 import '../css/Resume.css';
 
 function Resume() {
 
-  return(
+    // 이력사항 배열에 저장후 반복문 돌리기 
+    const education = [{course: 'KG ITBANK 자바기반 웹개발자 과정', term: '2019.3 ~ 2019.8'}, {course: '서울여자대학교 의류학과 (3.79 / 4.5)', term: '2010.3 ~ 2015.8'}]
+    const work = [{course: '서울여자대학교 재무팀 - 출납업무 및 재무관리', term: '2016.11 ~ 2018.11'}, {course: '신한은행 인천공항점 - 환전 및 입출금업무', term: '2015.9 ~ 2016.10'}]
+    const skills = ['HTML / CSS', 'JavaScript / JQuery', 'Ajax', 'React.js / React Native', 'Java / Jsp', 'Spring Framework', 'Oracle SQL', 'Git'];
+
+    return(
     <div className="ResumeContainer" id="resume">
         <div className="topTitle" id="resumeTitle">
             RESUME
         </div>
-        
         <div className="eduwork">
-            <div className="education">
-                <div className="title">
-                    EDUCATION
-                </div>
-                <div className="details">
-                    <div className="detailBox">
-                        <p >KG ITBANK 자바기반 웹개발자 과정</p>
-                        <p className="term">2019.3 ~ 2019.8</p>
-                    </div>
-                    <div className="detailBox">
-                        <p>서울여자대학교 의류학과 (3.79 / 4.5)</p>
-                        <p className="term">2010.3 ~ 2015.8</p>
-                    </div>
-                </div>
-            </div> 
-            <div className="work">
-                <div className="title">
-                    WORK
-                </div>
-                <div className="details">
-                    <div className="detailBox">
-                        <p >서울여자대학교 재무팀 - 출납업무 및 재무관리</p>
-                        <p className="term">2016.11 ~ 2018.11</p>
-                    </div>
-                    <div className="detailBox">
-                        <p>신한은행 인천공항점 - 환전 및 입출금업무</p>
-                        <p className="term">2015.9 ~ 2016.10</p>
-                    </div>
-                </div>
-            </div>  
+            <Detail title='eductaion' details={education}/>
+            <Detail title='work' details={work} />
         </div>
 
         <div className="skills">
@@ -48,16 +25,9 @@ function Resume() {
             </div>
             <div className="detailBox" id="skillInfo">
                 <div className="skillBox">
-                    <div>HTML / CSS</div>
-                    <div>JavaScript / JQuery</div>
-                    <div>Ajax</div>
-                    <div>React.js / React Native</div>
-                </div>
-                <div className="skillBox">
-                    <div>Java / Jsp</div>
-                    <div>Spring Framework</div>
-                    <div>Oracle SQL</div>
-                    <div>Git</div>
+                    {skills.map((skill, i) => {
+                        return <div key={skill+i}>{skill}</div>
+                    })}
                 </div>
             </div>
         </div>

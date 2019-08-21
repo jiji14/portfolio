@@ -4,6 +4,9 @@ import '../css/About.css';
 
 function About() {
 
+  // 본인을 표현할 수 있는 성격 배열에 저장후 반복문 돌리기 
+  const personality = ['Positive', 'HardWorking', 'FastLearning', 'Passionate'];
+
   return(
     <div className="homeContainer" id="about">
         <div className="topTitle">
@@ -11,10 +14,11 @@ function About() {
         </div>
         <div className="infoWrap">
             <div className="characters">
-              <div>Positive</div>
-              <div>HardWorking</div>
-              <div>FastLearning</div>
-              <div>Passionate</div>
+              { personality.map((p, i) => {
+                return (
+                  <div key={p+i}>{p}</div>
+                )
+              })}
             </div>
             <div className="profileBox">
               <img src={profile} className="profile" alt=""/>

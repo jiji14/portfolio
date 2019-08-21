@@ -3,7 +3,7 @@ import '../css/Footer.css';
 import up from '../image/up.png';
 
 function Footer() {
-
+  
   return(
     <footer className="footerContainer">   
         <div className="goUp">

@@ -43,6 +43,7 @@
   }
   .skillBox{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
   .skillBox>div{
@@ -53,10 +54,14 @@
     line-height: 100px;  
     height: 100px;
     width: 20%;
+    margin-right: 5%;
     margin-bottom: 20px;
     border-radius: 10px;
     color:white;
     box-shadow: 5px 5px 10px gray;
+  }
+  .skillBox>div:nth-child(4), .skillBox>div:last-child{
+    margin-right: 0;
   }
 
   
