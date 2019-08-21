@@ -58,6 +58,7 @@ a{
     width: 40%;
     height: 2em;
     line-height: 2em;   
+    margin-right: 0;
   }
 }
 
@@ -111,6 +112,7 @@ a{
     width: 80%;
     height: 2em;
     line-height: 2em;
+    margin-right: 0;
   }
 }
  
