@@ -7,7 +7,7 @@ function Home() {
   return(
     <div className="home" id="home">
         <div className="mainText">
-            Hi! I am Jijeong :)
+          Jijeong Lee, Front-End Developer
         </div>
         <div className="goDown" >
             <a href="#footer">
