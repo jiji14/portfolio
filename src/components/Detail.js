@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Detail.css';
 
 function Detail({title, details}){
 
@@ -15,6 +16,9 @@ function Detail({title, details}){
                     return(
                         <div className="detailBox" key={detail+i}>
                             <p >{detail.course}</p>
+                            <ul>{detail.detail && detail.detail.map((item)=>{
+                                return <li className="item">{item}</li>
+                            })}</ul>
                             <p className="term">{detail.term}</p>
                         </div>
                     )
