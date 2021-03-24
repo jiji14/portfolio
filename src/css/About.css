@@ -65,5 +65,19 @@
     color: #24292e;
   }
   .introduce{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .mail {
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .icon {
+    cursor: pointer;
+    margin-right: 10px;
+    width: 60px !important;
+    color: rgba(0, 0, 0, 0.7);
+    height: 60px !important;
+  }
+  .flex {
+    display: flex;
   }
