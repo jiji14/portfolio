@@ -9,6 +9,7 @@
   justify-content: center;
   position: fixed;
   z-index: 100;
+  height: 68px;
 }
 .headerList{
   width: 40%;
@@ -16,6 +17,7 @@
 }
 .headerList>ul>li>a{
   color: white !important;
+  position: absolute;
 }
 .headerList>ul>li>a:hover{
   font-size:1.2em;
