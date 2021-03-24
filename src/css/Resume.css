@@ -38,30 +38,19 @@
   }
   #skillInfo{
     display: flex;
-    flex-direction: column;
-    
-  }
-  .skillBox{
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
-  .skillBox>div{
-    background:rgb(139, 209, 197);
-    text-align: center;
-    font-style: bold;
-    font-size: 23px;
-    line-height: 100px;  
-    height: 100px;
-    width: 20%;
-    margin-right: 5%;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    color:white;
-    box-shadow: 5px 5px 10px gray;
+  #skillInfo>img{
+    margin-right: 20px;
   }
-  .skillBox>div:nth-child(4), .skillBox>div:last-child{
+  .bigLogo {
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  #skillInfo>img:last-child{
     margin-right: 0;
   }
-
+  .stack {
+    width: 80px;
+  }
   
