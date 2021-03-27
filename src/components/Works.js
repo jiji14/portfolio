@@ -116,7 +116,7 @@ function Works() {
                                     {works[workNum].with && "With " + works[workNum].with}
                                 </div>
                                 <div className="workDetail">{works[workNum].detail}</div>
-                                <div>
+                                <div className="skillContainer">
                                     {works[workNum].language.map((language,idx)=>{
                                         return (
                                             <>

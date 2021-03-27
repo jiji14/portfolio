@@ -89,3 +89,7 @@
   color: #616161;
   cursor: pointer;
 }
+.skillContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
