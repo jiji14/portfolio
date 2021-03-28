@@ -60,6 +60,7 @@ function Works() {
 
     function openModal(e){
         setWorkNum(e.target.id);
+        preloading(works[e.target.id].subImgSrc);
         setVisible(true);
     }
 
@@ -83,6 +84,17 @@ function Works() {
             setImgIndex(imgIndex + 1);
         }
     }
+
+    const preloading = (imageArray) => { 
+        let n = imageArray.length; 
+        for (let i = 0; i < n; i++) { 
+            let img = new Image(); 
+            img.src = imageArray[i]; 
+            console.log(imageArray[i])
+        } 
+    } 
+
+
     return (
         <div className="WorksContainer" id="works">
             <div className="topTitle">
