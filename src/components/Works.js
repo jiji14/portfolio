@@ -4,6 +4,12 @@ import closeBtn from '../image/clsBtn.png';
 import '../css/Works.css';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import dailyfield1 from '../image/work/dailyfield/1_로그인.png';
+import dailyfield2 from '../image/work/dailyfield/2_매치목록.png';
+import dailyfield3 from '../image/work/dailyfield/4_매치디테일.png';
+import dailyfield4 from '../image/work/dailyfield/3_매치신청.png';
+import dailyfield5 from '../image/work/dailyfield/5_매치등록.png';
+import dailyfield6 from '../image/work/dailyfield/6_선수확인.png';
 
 function Works() {
     const works = [
@@ -11,13 +17,8 @@ function Works() {
             title : "풋살 매치 예약시스템",
             with : "Daily Field",
             language : ["React", "Typescript", "Firebase", "Jest"],
-            imgSrc : require('../image/work/dailyfield/2_매치목록.png'),
-            subImgSrc: [require('../image/work/dailyfield/1_로그인.png'),
-                        require('../image/work/dailyfield/2_매치목록.png'),
-                        require('../image/work/dailyfield/4_매치디테일.png'),
-                        require('../image/work/dailyfield/3_매치신청.png'),
-                        require('../image/work/dailyfield/5_매치등록.png'),
-                        require('../image/work/dailyfield/6_선수확인.png')],
+            imgSrc : dailyfield2,
+            subImgSrc: [dailyfield1, dailyfield2, dailyfield3, dailyfield4, dailyfield5, dailyfield6],
             detail : "풋살 매치를 예약할 수 있는 사이트입니다. 회원들은 매치를 확인하여 예약 및 취소, 관리자는 매치 및 회원을 관리할 수 있습니다.",
             viewSite : ["https://dailyfield.info"],
         },
