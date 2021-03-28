@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Modal from 'react-awesome-modal';
 import closeBtn from '../image/clsBtn.png';
 import '../css/Works.css';
@@ -58,6 +58,10 @@ function Works() {
     const [workNum, setWorkNum] = useState(0);
     const [imgIndex, setImgIndex] = useState(0);
 
+    useEffect(()=> {
+        preloading([dailyfield1, clickai1, airapp1]);
+    }, [])
+
     function openModal(e){
         setWorkNum(e.target.id);
         preloading(works[e.target.id].subImgSrc);
@@ -90,7 +94,6 @@ function Works() {
         for (let i = 0; i < n; i++) { 
             let img = new Image(); 
             img.src = imageArray[i]; 
-            console.log(imageArray[i])
         } 
     } 
 
