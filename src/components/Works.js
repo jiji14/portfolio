@@ -10,6 +10,19 @@ import dailyfield3 from '../image/work/dailyfield/4_매치디테일.png';
 import dailyfield4 from '../image/work/dailyfield/3_매치신청.png';
 import dailyfield5 from '../image/work/dailyfield/5_매치등록.png';
 import dailyfield6 from '../image/work/dailyfield/6_선수확인.png';
+import clickai1 from '../image/work/clickai/1_로그인.png';
+import clickai2 from '../image/work/clickai/2_메인.png';
+import clickai3 from '../image/work/clickai/3_인공지능리스트.png';
+import clickai4 from '../image/work/clickai/4_인공지능디테일.png';
+import clickai5 from '../image/work/clickai/5_인공지능상세.png';
+import clickai6 from '../image/work/clickai/6_인공지능예측.png';
+import clickai7 from '../image/work/clickai/7_라벨리스트.png';
+import clickai8 from '../image/work/clickai/8_라벨미리보기.png';
+import clickai9 from '../image/work/clickai/9_라벨링툴.png';
+import clickai10 from '../image/work/clickai/10_세팅.png';
+import airapp1 from '../image/work/airApp/airApp1.png';
+import airapp2 from '../image/work/airApp/airWeb1.png';
+import airapp3 from '../image/work/airApp/airWeb2.png';
 
 function Works() {
     const works = [
@@ -26,29 +39,16 @@ function Works() {
             title : "CLICK AI 인공지능 자동개발 솔루션",
             with : "Dslab Global",
             language : ["React", "Javascript", "Redux/Saga", "Cypress"],
-            imgSrc : require('../image/work/clickai/2_메인.png'),
-            subImgSrc: [require('../image/work/clickai/1_로그인.png'),
-                        require('../image/work/clickai/2_메인.png'),
-                        require('../image/work/clickai/3_인공지능리스트.png'),
-                        require('../image/work/clickai/4_인공지능디테일.png'),
-                        require('../image/work/clickai/5_인공지능상세.png'),
-                        require('../image/work/clickai/6_인공지능예측.png'),
-                        require('../image/work/clickai/7_라벨리스트.png'),
-                        require('../image/work/clickai/8_라벨미리보기.png'),
-                        require('../image/work/clickai/9_라벨링툴.png'),
-                        require('../image/work/clickai/10_세팅.png')
-                    ],
+            imgSrc : clickai2,
+            subImgSrc: [clickai1, clickai2, clickai3, clickai4, clickai5, clickai6, clickai7, clickai8, clickai9, clickai10],
             detail : "CLICK AI는 데이터를 입력하면 인공지능 모델을 자동으로 개발해주는 솔루션입니다. 딥러닝 모델의 상세 지표를 확인할 수 있으며 결과를 간편하게 예측할 수 있습니다. 또한, 물체인식 관련 라벨링 툴을 제공합니다.",
             viewSite : ["https://app.clickai.ai/"],
         },
         {
             title : "Air Quality Web/App",
             language : ["React Native", "React", "Javascript"],
-            imgSrc : require('../image/work/airApp/airApp1.png'),
-            subImgSrc: [require('../image/work/airApp/airApp1.png'),
-                require('../image/work/airApp/airWeb1.png'),
-                require('../image/work/airApp/airWeb2.png')
-            ],
+            imgSrc : airapp1,
+            subImgSrc: [airapp1, airapp2, airapp3],
             detail : "미세먼지 수치를 측정할 수 있는 서비스입니다. 앱은 위치를 기반으로 미세먼지 수치를 알려주며, 웹은 원하는 도시를 입력하면 미세먼지 수치를 확인할 수 있습니다.",
             viewSite : ["https://play.google.com/store/apps/details?id=com.jiji.getAirApp",
                         "https://jiji14.github.io/getAQI/"]
