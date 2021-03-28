@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Footer.css';
-import up from '../image/up.png';
+import up from '../image/doubleUp.png';
 
 function Footer() {
   

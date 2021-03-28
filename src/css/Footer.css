@@ -2,15 +2,15 @@
     width:100%;
 }
 .goUp{
-    margin-bottom: 6em;
+    margin-bottom: 4em;
     text-align: center;
 }  
 .upImg{
-    width:70px;
+    width:80px;
     cursor: pointer;
 }
 .upImg:hover{
-    width:80px;
+    width:90px;
     transition: 0.3s;
 }
 .bottom{

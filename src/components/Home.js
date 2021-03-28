@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Home.css';
-import down from '../image/down.png';
+import down from '../image/doubleDown.png';
 
 function Home() {
 
