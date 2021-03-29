@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6df11cd2556b11c344c3351f88ebae65",
+    "revision": "adde99bdb098b5e5297b0c8567988eef",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "aa1261453e5e2f0cd880",
-    "url": "/portfolio/static/css/main.a4b47ce1.chunk.css"
+    "revision": "3a66ee6b12ff7ab057b6",
+    "url": "/portfolio/static/css/main.9e795853.chunk.css"
   },
   {
-    "revision": "eaabe04859a9f42ee84d",
-    "url": "/portfolio/static/js/2.95efd93f.chunk.js"
+    "revision": "a0a705c2115b690088df",
+    "url": "/portfolio/static/js/2.38cca7cb.chunk.js"
   },
   {
-    "revision": "aa1261453e5e2f0cd880",
-    "url": "/portfolio/static/js/main.76e64d91.chunk.js"
+    "revision": "3a66ee6b12ff7ab057b6",
+    "url": "/portfolio/static/js/main.46cb5ebc.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -32,24 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/1_로그인.d88e8c67.png"
   },
   {
-    "revision": "fda5a8ca18c64332caeac0d01f7a50ec",
-    "url": "/portfolio/static/media/1_로그인.fda5a8ca.png"
-  },
-  {
     "revision": "7af6c53e2f76465a07e2d0f6a790ac26",
     "url": "/portfolio/static/media/2_매치목록.7af6c53e.png"
   },
   {
-    "revision": "21fd3c80456590d4f982f28fb6a35c8c",
-    "url": "/portfolio/static/media/2_메인.21fd3c80.png"
-  },
-  {
     "revision": "5f0bbf15c05efbf32a48cfc7db5c1178",
     "url": "/portfolio/static/media/2_메인.5f0bbf15.png"
-  },
-  {
-    "revision": "2d2dac7ddb21570403bf93a4c9f286c3",
-    "url": "/portfolio/static/media/3_녹음하기.2d2dac7d.png"
   },
   {
     "revision": "b6b918b8abd10a5628f46d579912a082",
@@ -58,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a5ca32615eaa39f6c676b8bad3bc66c",
     "url": "/portfolio/static/media/3_인공지능리스트.3a5ca326.png"
-  },
-  {
-    "revision": "4fc36daf350ca62efc383c321ac4b004",
-    "url": "/portfolio/static/media/4_녹음내역.4fc36daf.png"
   },
   {
     "revision": "abf4398419f7faf2fd4a002167311b73",
@@ -80,16 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/5_인공지능상세.54fabdf5.png"
   },
   {
-    "revision": "2d2e976da1f14f52ec00bf12f258d8d0",
-    "url": "/portfolio/static/media/5_통합검색.2d2e976d.png"
-  },
-  {
     "revision": "984d326d87fd64b3bf3cdb8994b0637d",
     "url": "/portfolio/static/media/6_선수확인.984d326d.png"
-  },
-  {
-    "revision": "d90d37924ea484e04cc993348aa218dd",
-    "url": "/portfolio/static/media/6_세팅.d90d3792.png"
   },
   {
     "revision": "e785f9fe84ccd6a2eccad89eca47128d",
