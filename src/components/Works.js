@@ -104,67 +104,62 @@ function Works() {
                 WORKS
             </div>
             <div className="workWrap" >
-                <div className="items">
-                    <img onClick={openModal} src={works[0].imgSrc} className="workImg" id="0" alt=""/>
-                    <div></div>
-                </div>
-                <div className="items">
-                    <img onClick={openModal} src={works[1].imgSrc} className="workImg" id="1" alt=""/>
-                </div>
-                <div className="items">
-                    <img onClick={openModal} src={works[2].imgSrc} className="workImg" id="2" alt=""/>
+                {
+                works.map((work, idx)=>{
+                    return (
+                        <div className="items">
+                        <img onClick={openModal} src={work.imgSrc} className="workImg" id={idx} alt=""/>
+                        <div className="modalInfo">
+                            <div className="workTitleText">{work.title}</div>
+                                <div className="workWithText">
+                                    {work.with ? "With " + work.with : "Personal project"}
+                                </div>
+                            </div>
+                            <div className="btnBox">
+                                {work.viewSite.map((site,idx)=>{
+                                    return (
+                                        <div className="view">
+                                            {
+                                            site.includes("play.google.com") ? 
+                                            <a href={site} target="_blank" >View App</a>
+                                            :
+                                            <a href={site} target="_blank" >View Site</a>
+                                            }
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                            <div className="skillContainer">
+                                {work.language.map((language,idx)=>{
+                                    return (
+                                        <>
+                                        <span className="languageText">{language}
+                                        </span>
+                                        {idx !== work.language.length -1 &&
+                                        <span className="languageText">
+                                            /
+                                        </span>
+                                        }
+                                        </>
+                                    )
+                                })}
+                            <div className="workDetail">{work.detail}</div>
+                        </div>
+                    </div>
+                    )
+               
+                })
+                }
                 </div>
                 <Modal visible={visible} works={works} workNum={workNum} width="50%" effect="fadeInUp" onClickAway={closeModal}>
                         <div className="modalBox">
-                            {/* <div className="topLine">
-                                <h1 className="modalTitle">{works[workNum].title}</h1>
-                                <img src={closeBtn} className="closeBtn" onClick={closeModal} alt="" />
-                            </div> */}
                             <img src={works[workNum].subImgSrc[imgIndex]} className="popImg" alt="" />
                             <div className="imageNavigator" >
                                 <NavigateBeforeIcon onClick={setPreviousImage}  id ="navigator" />
                                 <NavigateNextIcon onClick={setNextImage} id="navigator" />
                             </div>
-
-                            <div className="modalInfo">
-                                <div className="workTitleText">{works[workNum].title}</div>
-                                <div className="workWithText">
-                                    {works[workNum].with && "With " + works[workNum].with}
-                                </div>
-                                <div className="workDetail">{works[workNum].detail}</div>
-                                <div className="skillContainer">
-                                    {works[workNum].language.map((language,idx)=>{
-                                        return (
-                                            <>
-                                            <span className="languageText">{language}
-                                            </span>
-                                            {idx !== works[workNum].language.length -1 &&
-                                            <span className="languageText">
-                                                /
-                                            </span>
-                                            }
-                                            </>
-                                        )
-                                    })}
-                                </div>
-                                <div className="btnBox">
-                                    {works[workNum].viewSite.map((site,idx)=>{
-                                        return (
-                                            <div className="view">
-                                                {
-                                                site.includes("play.google.com") ? 
-                                                <a href={site} target="_blank" >View App</a>
-                                                :
-                                                <a href={site} target="_blank" >View Site</a>
-                                                }
-                                            </div>
-                                        )
-                                    })}
-                                </div>
-                            </div>
                         </div>
                 </Modal>
-            </div>  
         </div>
     )
 }
