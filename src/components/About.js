@@ -28,7 +28,7 @@ function About() {
               <div className="aboutMe">
                   <div className="introduce">
                     {/* <p className="info">ABOUT ME</p> */}
-                    <p className="desc">2년차 주니어 프론트엔드 개발자 이지정입니다. </p>
+                    <p className="desc">2년차  프론트엔드 개발자 이지정입니다. </p>
                     <p className="desc">배움에 있어 열정적이며, 소통에 강한 팀플레이어 입니다.</p>
                   </div>
                   <div className="contactBox">
