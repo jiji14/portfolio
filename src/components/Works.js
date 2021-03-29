@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import Modal from 'react-awesome-modal';
-import closeBtn from '../image/clsBtn.png';
 import '../css/Works.css';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
@@ -23,6 +22,7 @@ import clickai10 from '../image/work/clickai/10_세팅.png';
 import airapp1 from '../image/work/airApp/airApp1.png';
 import airapp2 from '../image/work/airApp/airWeb1.png';
 import airapp3 from '../image/work/airApp/airWeb2.png';
+import ZoomInIcon from '@material-ui/icons/ZoomIn';
 
 function Works() {
     const works = [
@@ -108,7 +108,10 @@ function Works() {
                 works.map((work, idx)=>{
                     return (
                         <div className="items">
-                        <img onClick={openModal} src={work.imgSrc} className="workImg" id={idx} alt=""/>
+                        <div className="workImgContainer">
+                            <img onClick={openModal} src={work.imgSrc} className="workImg" id={idx} alt=""/>
+                            <ZoomInIcon fontSize="large" className="zoomInIcon" />
+                        </div>
                         <div className="modalInfo">
                             <div className="workTitleText">{work.title}</div>
                                 <div className="workWithText">
