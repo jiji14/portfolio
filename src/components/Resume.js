@@ -29,7 +29,7 @@ function Resume() {
         </div>
         <div className="eduwork">
             <Detail title='work' details={work} />
-            <Detail title='eductaion' details={education}/>
+            <Detail title='education' details={education}/>
         </div>
         <div className="skills">
             <div className="title">
@@ -38,9 +38,10 @@ function Resume() {
             <div className="detailBox" id="skillInfo">
                 {skills.map((skill, i) => {
                     return (
-                        <Tooltip title={skill.name} arrow>
+                        <div className="skillsContainer">
                             <img src={skill.src} className={`stack ${skill.isBig && 'bigLogo'}`} key={skill+i} />
-                        </Tooltip>
+                            <div className="skillText">{skill.name}</div>
+                        </div>
                     )
                 })}
             </div>
