@@ -60,13 +60,11 @@ function Works() {
 
     useEffect(()=> {
         preloading([dailyfield1, clickai1, airapp1]);
-        works.map((work)=>{
-            preloading(work.subImgSrc);
-        })
     }, [])
 
     function openModal(id){
         setWorkNum(id);
+        preloading(works[id].subImgSrc);
         setVisible(true);
     }
 
