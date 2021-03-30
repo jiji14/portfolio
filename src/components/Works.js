@@ -60,11 +60,13 @@ function Works() {
 
     useEffect(()=> {
         preloading([dailyfield1, clickai1, airapp1]);
+        works.map((work)=>{
+            preloading(work.subImgSrc);
+        })
     }, [])
 
-    function openModal(e){
-        setWorkNum(e.target.id);
-        preloading(works[e.target.id].subImgSrc);
+    function openModal(id){
+        setWorkNum(id);
         setVisible(true);
     }
 
@@ -109,8 +111,8 @@ function Works() {
                     return (
                         <div className="items">
                         <div className="workImgContainer">
-                            <img onClick={openModal} src={work.imgSrc} className="workImg" id={idx} alt=""/>
-                            <ZoomInIcon fontSize="large" className="zoomInIcon" />
+                            <img onClick={()=>{openModal(idx)}} src={work.imgSrc} className="workImg" alt=""/>
+                            <ZoomInIcon onClick={()=>{openModal(idx)}} fontSize="large" className="zoomInIcon" />
                         </div>
                         <div className="modalInfo">
                             <div className="workTitleText">{work.title}</div>
