@@ -20,6 +20,10 @@
     color: #24292e;
     font-style: italic;
 }
+.smallText{
+    font-size: 14px;
+    margin: 0 4px;
+}
 em{
     color: rgb(139, 209, 197);
     font-weight: bold;
