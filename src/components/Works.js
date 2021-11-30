@@ -22,10 +22,25 @@ import clickai10 from '../image/work/clickai/10_세팅.png';
 import airapp1 from '../image/work/airApp/airApp1.png';
 import airapp2 from '../image/work/airApp/airWeb1.png';
 import airapp3 from '../image/work/airApp/airWeb2.png';
+import nolbal1 from '../image/work/nolbal/1_main.png';
+import nolbal2 from '../image/work/nolbal/2_search.png';
+import nolbal3 from '../image/work/nolbal/3_relatedSearch.png';
+import nolbal4 from '../image/work/nolbal/4_photoReview.png';
+import nolbal5 from '../image/work/nolbal/5_photoList.png';
+import nolbal6 from '../image/work/nolbal/6_photoDetail.png';
+import nolbal7 from '../image/work/nolbal/7_notice.png';
 import ZoomInIcon from '@material-ui/icons/ZoomIn';
 
 function Works() {
     const works = [
+        {
+            title : "놀이의 발견",
+            language : ["Next.js", "Typescript", "Styled Component"],
+            imgSrc : nolbal1,
+            subImgSrc: [nolbal1, nolbal2, nolbal3, nolbal4, nolbal5, nolbal6, nolbal7],
+            detail : "우리 아이와 함께하는 키즈호텔, 놀거리 예약까지 아이의 놀이와 관련된 모든 것들을 제공하는 서비스입니다.",
+            viewSite : ["https://nolbal.com/", "https://page.nolbal.com/tutor/"]
+        },
         {
             title : "풋살 매치 예약시스템",
             with : "Daily Field",
@@ -52,14 +67,14 @@ function Works() {
             detail : "미세먼지 수치를 측정할 수 있는 서비스입니다. 앱은 위치를 기반으로 미세먼지 수치를 알려주며, 웹은 원하는 도시를 입력하면 미세먼지 수치를 확인할 수 있습니다.",
             viewSite : ["https://play.google.com/store/apps/details?id=com.jiji.getAirApp",
                         "https://jiji14.github.io/getAQI/"]
-        }
+        },
     ]
     const [visible, setVisible] = useState(false);
     const [workNum, setWorkNum] = useState(0);
     const [imgIndex, setImgIndex] = useState(0);
 
     useEffect(()=> {
-        preloading([dailyfield1, clickai1, airapp1]);
+        preloading([dailyfield1, clickai1, airapp1, nolbal1]);
     }, [])
 
     function openModal(id){
@@ -89,13 +104,13 @@ function Works() {
         }
     }
 
-    const preloading = (imageArray) => { 
-        let n = imageArray.length; 
-        for (let i = 0; i < n; i++) { 
-            let img = new Image(); 
-            img.src = imageArray[i]; 
-        } 
-    } 
+    const preloading = (imageArray) => {
+        let n = imageArray.length;
+        for (let i = 0; i < n; i++) {
+            let img = new Image();
+            img.src = imageArray[i];
+        }
+    }
 
 
     return (
@@ -123,7 +138,7 @@ function Works() {
                                     return (
                                         <div className="view">
                                             {
-                                            site.includes("play.google.com") ? 
+                                            site.includes("play.google.com") ?
                                             <a href={site} target="_blank" >View App</a>
                                             :
                                             <a href={site} target="_blank" >View Site</a>
@@ -150,7 +165,7 @@ function Works() {
                         </div>
                     </div>
                     )
-               
+
                 })
                 }
                 </div>
