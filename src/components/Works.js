@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Modal from 'react-awesome-modal';
+import { useTranslation } from 'react-i18next';
 import '../css/Works.css';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
@@ -35,11 +36,12 @@ function Works() {
     const works = [
         {
             title : "놀이의 발견",
-            language : ["Next.js", "Typescript", "Styled Component"],
+            with : "The Nolbal Co.",
+            language : ["Next.js", "Typescript", "Redux", "Styled Component"],
             imgSrc : nolbal1,
             subImgSrc: [nolbal1, nolbal2, nolbal3, nolbal4, nolbal5, nolbal6, nolbal7],
             detail : "우리 아이와 함께하는 키즈호텔, 놀거리 예약까지 아이의 놀이와 관련된 모든 것들을 제공하는 서비스입니다.",
-            viewSite : ["https://nolbal.com/", "https://page.nolbal.com/tutor/"]
+            viewSite : ["https://nolbal.com/"]
         },
         {
             title : "풋살 매치 예약시스템",
@@ -52,7 +54,7 @@ function Works() {
         },
         {
             title : "CLICK AI 인공지능 자동개발 솔루션",
-            with : "Dslab Global",
+            with : "Dslab Global Inc.",
             language : ["React", "Javascript", "Redux/Saga", "Cypress"],
             imgSrc : clickai2,
             subImgSrc: [clickai1, clickai2, clickai3, clickai4, clickai5, clickai6, clickai7, clickai8, clickai9, clickai10],
@@ -72,6 +74,7 @@ function Works() {
     const [visible, setVisible] = useState(false);
     const [workNum, setWorkNum] = useState(0);
     const [imgIndex, setImgIndex] = useState(0);
+    const { t }  = useTranslation(['page']);
 
     useEffect(()=> {
         preloading([dailyfield1, clickai1, airapp1, nolbal1]);
@@ -122,13 +125,13 @@ function Works() {
                 {
                 works.map((work, idx)=>{
                     return (
-                        <div className="items">
+                    <div className="items">
                         <div className="workImgContainer">
                             <img onClick={()=>{openModal(idx)}} src={work.imgSrc} className="workImg" alt=""/>
                             <ZoomInIcon onClick={()=>{openModal(idx)}} fontSize="large" className="zoomInIcon" />
                         </div>
                         <div className="modalInfo">
-                            <div className="workTitleText">{work.title}</div>
+                            <div className="workTitleText">{t(work.title)}</div>
                                 <div className="workWithText">
                                     {work.with ? "With " + work.with : "Personal project"}
                                 </div>
@@ -161,22 +164,21 @@ function Works() {
                                         </>
                                     )
                                 })}
-                            <div className="workDetail">{work.detail}</div>
+                            <div className="workDetail">{t(work.detail)}</div>
                         </div>
                     </div>
                     )
-
                 })
                 }
                 </div>
-                <Modal visible={visible} works={works} workNum={workNum} width="50%" effect="fadeInUp" onClickAway={closeModal}>
-                        <div className="modalBox">
-                            <img src={works[workNum].subImgSrc[imgIndex]} className="popImg" alt="" />
-                            <div className="imageNavigator" >
-                                <NavigateBeforeIcon onClick={setPreviousImage}  id ="navigator" />
-                                <NavigateNextIcon onClick={setNextImage} id="navigator" />
-                            </div>
+                <Modal visible={visible} works={works} workNum={workNum} width="60%" effect="fadeInUp" onClickAway={closeModal}>
+                    <div className="modalBox">
+                        <img src={works[workNum].subImgSrc[imgIndex]} className="popImg" alt="" />
+                        <div className="imageNavigator" >
+                            <NavigateBeforeIcon onClick={setPreviousImage}  id ="navigator" />
+                            <NavigateNextIcon onClick={setNextImage} id="navigator" />
                         </div>
+                    </div>
                 </Modal>
         </div>
     )
