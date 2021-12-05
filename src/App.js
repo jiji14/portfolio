@@ -6,6 +6,7 @@ import Resume from './components/Resume.js';
 import Works from './components/Works.js';
 import Footer from './components/Footer.js';
 import $ from "jquery";
+import './i18n';
 
 import './css/App.css';
 
