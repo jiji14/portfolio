@@ -1,6 +1,5 @@
 /*Resume*/
 .ResumeContainer{
-    width: 80%;
     display: flex;
     flex-direction: column;
   }
@@ -9,11 +8,13 @@
   }
   .education, .work, .skills{
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
     margin-bottom: 70px;
   }
   .details{
-    font-size: 25px;
+    margin-right: 10px;
+    font-size: 24px;
   }
   .detailBox{
     margin-bottom: 20px;
@@ -58,7 +59,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 30px 30px;
   }
   .skillText {
     font-size: 12px;

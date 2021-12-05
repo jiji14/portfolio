@@ -60,6 +60,9 @@ a{
     line-height: 2em;   
     margin-right: 0;
   }
+  .profile {
+    width: 80%;
+  }
 }
 
 /* 작은 태블릿 & 모바일 */
@@ -101,6 +104,9 @@ a{
     font-size: 1.7em !important;
     margin-bottom: 1em;
   }
+  .items {
+    min-width: 80%;
+  }
   .items:nth-child(2){
     padding-bottom: 3em;
   }
@@ -113,6 +119,19 @@ a{
     height: 2em;
     line-height: 2em;
     margin-right: 0;
+  }
+  .stack {
+    width: 60px;
+    height: 60px;
+  }
+  .skillsContainer {
+    margin: 0 10px 10px;
+  }
+  .profile {
+    width: 100%;
+  }
+  .aboutMe {
+    padding: 20px 0;
   }
 }
  
