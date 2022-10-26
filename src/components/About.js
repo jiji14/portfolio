@@ -22,9 +22,9 @@ function About() {
                   <div className="introduce">
                     {/* <p className="info">ABOUT ME</p> */}
                     <p className="desc">
-                      {t('2년차 프론트엔드 개발자 이지정입니다.')}
-                      {' '}
-                      {t('배움에 있어 열정적이며, 소통에 강한 팀플레이어 입니다.')}
+                      I am a front-end software engineer specialized in Typescript and Javascript.<br />
+                      I have professional experiences working with React and Next.js.<br />
+                      I am currently studying for my master's degree in computer science.
                     </p>
                   </div>
                   <div className="contactBox">

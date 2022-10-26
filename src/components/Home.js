@@ -6,7 +6,7 @@ function Home() {
 
   const [index, setIndex] = useState(0);
   const [isTextChanged, setIsTextChanged] = useState(true);
-  const texts = ["Jijeong Lee, Front-End Developer", "Webapps, Mobile apps", "React Javascript Typescript Firebase"];
+  const texts = ["Jijeong Lee, Front-End Engineer", "Webapps, Mobile apps", "React Javascript Typescript Firebase"];
   
   useEffect(()=>{
     setTimeout(()=>{

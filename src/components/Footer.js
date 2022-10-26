@@ -12,7 +12,7 @@ function Footer() {
             </a>
         </div>
         <div className="bottom" id="footer">
-            Jijeong Lee <span className="smallText">updated at</span> <em>12/05/2021</em>
+            Jijeong Lee <span className="smallText">updated at</span> <em>10/25/2022</em>
         </div>
     </footer>
   )
