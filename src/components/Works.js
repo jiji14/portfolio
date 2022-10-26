@@ -59,7 +59,7 @@ function Works() {
             imgSrc : clickai2,
             subImgSrc: [clickai1, clickai2, clickai3, clickai4, clickai5, clickai6, clickai7, clickai8, clickai9, clickai10],
             detail : "CLICK AI는 데이터를 입력하면 인공지능 모델을 자동으로 개발해주는 솔루션입니다. 딥러닝 모델의 상세 지표를 확인할 수 있으며 결과를 간편하게 예측할 수 있습니다. 또한, 물체인식 관련 라벨링 툴을 제공합니다.",
-            viewSite : ["https://app.clickai.ai/"],
+            viewSite : ["https://ds2.ai/"],
         },
         {
             title : "Air Quality Web/App",
