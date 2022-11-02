@@ -36,7 +36,7 @@ function Works() {
     const works = [
         {
             title : "놀이의 발견",
-            with : "The Nolbal Co.",
+            with : "THE NOLBAL CO., LTD",
             language : ["Next.js", "Typescript", "Redux", "Styled Component"],
             imgSrc : nolbal1,
             subImgSrc: [nolbal1, nolbal2, nolbal3, nolbal4, nolbal5, nolbal6, nolbal7],
