@@ -81,3 +81,6 @@
   .flex {
     display: flex;
   }
+  .pointer {
+    cursor: pointer;
+  }

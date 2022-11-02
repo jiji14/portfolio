@@ -29,13 +29,13 @@ function About() {
                   </div>
                   <div className="contactBox">
                     {/* <p className="info">CONTACT INFO</p> */}
-                    <p className="desc flex">
+                    <a href="mailto:jijeong0114@gmail.com" className="desc flex pointer">
                       <EmailIcon className="mail" fontSize="large" />
                       jijeong0114@gmail.com
-                      </p>
+                    </a>
                     <p className="desc">
-                      <GitHubIcon className="icon" onClick={()=>{window.open("https://github.com/jiji14", "_blank");}} />
-                      <LinkedInIcon className="icon" onClick={()=>{window.open("https://www.linkedin.com/in/JijeongLee", "_blank");}}/>
+                      <GitHubIcon className="icon pointer" onClick={()=>{window.open("https://github.com/jiji14", "_blank");}} />
+                      <LinkedInIcon className="icon pointer" onClick={()=>{window.open("https://www.linkedin.com/in/JijeongLee", "_blank");}}/>
                     </p>
                   </div>
               </div>    
