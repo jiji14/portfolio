@@ -67,8 +67,7 @@ function Works() {
             imgSrc : airapp1,
             subImgSrc: [airapp1, airapp2, airapp3],
             detail : "미세먼지 수치를 측정할 수 있는 서비스입니다. 앱은 위치를 기반으로 미세먼지 수치를 알려주며, 웹은 원하는 도시를 입력하면 미세먼지 수치를 확인할 수 있습니다.",
-            viewSite : ["https://play.google.com/store/apps/details?id=com.jiji.getAirApp",
-                        "https://jiji14.github.io/getAQI/"]
+            viewSite : ["https://jiji14.github.io/getAQI/"]
         },
     ]
     const [visible, setVisible] = useState(false);
@@ -142,9 +141,9 @@ function Works() {
                                         <div className="view">
                                             {
                                             site.includes("play.google.com") ?
-                                            <a href={site} target="_blank" >View App</a>
+                                            <a href={site} target="_blank" rel="noopener noreferrer" >View App</a>
                                             :
-                                            <a href={site} target="_blank" >View Site</a>
+                                            <a href={site} target="_blank" rel="noopener noreferrer" >View Site</a>
                                             }
                                         </div>
                                     )

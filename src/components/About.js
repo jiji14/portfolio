@@ -7,9 +7,6 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 
 function About() {
-
-  const { t }  = useTranslation(['page']);
-
   return(
     <div className="homeContainer" id="about">
         <div className="topTitle">
@@ -22,9 +19,8 @@ function About() {
                   <div className="introduce">
                     {/* <p className="info">ABOUT ME</p> */}
                     <p className="desc">
-                      I am a front-end software engineer specialized in Typescript and Javascript.<br />
-                      I have professional experiences working with React and Next.js.<br />
-                      I am currently studying for my master's degree in computer science.
+                      I am a front-end engineer specialized in Typescript and Javascript.<br />
+                      I have 3 years of professional experiences and am currently studying for my master's degree in computer science.
                     </p>
                   </div>
                   <div className="contactBox">
